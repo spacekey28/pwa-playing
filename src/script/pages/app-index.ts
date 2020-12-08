@@ -71,7 +71,7 @@ export class AppIndex extends LitElement {
             path: "/about",
             component: "app-about",
             action: async () => {
-              await import('./app-about.js');
+              await import('./app-meals.js');
             },
           }
         ]
