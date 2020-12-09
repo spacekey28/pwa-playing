@@ -51,7 +51,7 @@ export class AppHeader extends LitElement {
 
         <nav>
           <a href="./">Home</a>
-          <a href="./about">About</a>
+          <a href="./meals">Meals</a>
         </nav>
       </header>
     `;
