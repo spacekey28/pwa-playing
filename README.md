@@ -1,3 +1,5 @@
+
+
 # pwa-starter
 
 Welcome to the [PWABuilder](https://www.pwabuilder.com/) pwa-starter! Looking to build a new [Progressive Web App](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps) and not sure where to get started? This is what you are looking for! The pwa-starter includes everything you need to start building a production ready PWA and follows all best practices. You get:
@@ -75,37 +77,3 @@ For Authentication you can use the [PWABuilder pwa-auth](https://github.com/pwa-
 
 😎😎 Double bonus: It uses the new [Credential Management APIs](https://developers.google.com/web/fundamentals/security/credential-management) to speed through sign-ins without bulky pop-ups or redirects.
 
-
-
-## Folder Structure
-
-```
-pwa-starter
-│   README.md (docs)
-│   rollup.config.js (bundler config https://rollupjs.org/)  
-|   tsconfig.json (TypeScript config https://www.typescriptlang.org/)
-|   pwabuilder-sw.js (Service Worker https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API)
-|   package.json (https://docs.npmjs.com/creating-a-package-json-file)
-|   package-lock.json (https://docs.npmjs.com/files/package-lock.json)
-|   manifest.json (web manifest https://developer.mozilla.org/en-US/docs/Web/Manifest)
-|   index.prod.html (index.html file used for production builds)
-|   index.html (index.html for dev builds)
-|   *note*: The index.prod.html registers a service worker which caches assets, so index.html is used for dev builds
-|   .gitignore (git config file https://git-scm.com/docs/gitignore)
-│
-└───src (most of your development will happen here)
-│   │   global.css (used for global CSS styles and CSS variables)
-│   │
-│   └───script
-│       │
-│       |
-|       └───components
-|           |   header.ts (header component)
-|       |
-|       |
-|       └───pages
-|           |   app-index.ts (app-index component)
-|           |   app-home.ts (app-home component)
-|           |   app-about.ts (app-about component)
-
-```
