@@ -3,10 +3,6 @@ import { LitElement, css, html, customElement, property } from 'lit-element';
 // For more info on the @pwabuilder/pwainstall component click here https://github.com/pwa-builder/pwa-install
 import '@pwabuilder/pwainstall';
 
-const axios = require('axios');
-var Airtable = require('airtable');
-var base = new Airtable({apiKey:process.env.API_KEY}).base(process.env.BASE_ID);
-
 
 @customElement('app-home')
 export class AppHome extends LitElement {
@@ -64,10 +60,6 @@ export class AppHome extends LitElement {
     // for more info check out the lit-element docs https://lit-element.polymer-project.org/guide/lifecycle
     console.log('This is your home page');
 
-
-    axios.defaults.baseURL = `https://api.airtable.com/v0/${process.env.BASE_ID}/demo/`;
-    axios.defaults.headers.post['Content-Type'] = 'application/json';
-    axios.defaults.headers['Authorization'] = `Bearer ${process.env.API_KEY}`;
   }
 
   share() {
