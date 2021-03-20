@@ -1,4 +1,3 @@
-require('dotenv').config();
 
 import { LitElement, css, html, customElement } from 'lit-element';
 
@@ -7,6 +6,7 @@ import './app-home';
 import { Router } from '@vaadin/router';
 
 import '../components/header';
+import '../components/footer';
 
 
 @customElement('app-index')
@@ -89,6 +89,8 @@ export class AppIndex extends LitElement {
         <main>
           <div id="routerOutlet"></div>
         </main>
+
+        <app-footer></app-footer>
       </div>
     `;
   }
