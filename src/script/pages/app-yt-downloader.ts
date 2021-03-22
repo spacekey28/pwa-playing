@@ -15,8 +15,9 @@ export class AppYTDownloader extends LitElement {
   render() {
     return html`
       <div>
-        <h2>Youtube Downloader Page</h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/qdgc5yitWHg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h1 class="heading">YouTube Downloader</h1>
+        <input class="URL-input" placeholder="Video URL e.g. https://www.youtube.com/watch?v=MtN1YnoL46Q">
+        <button class="convert-button">Convert</button>
       </div>
     `;
   }
