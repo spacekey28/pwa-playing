@@ -27,7 +27,6 @@ export class AppHeader extends LitElement {
       }
 
       nav {
-        width: 7em;
         display: flex;
         justify-content: space-between;
       }
@@ -36,6 +35,7 @@ export class AppHeader extends LitElement {
         color: white;
         font-size: 18px;
         font-weight: bold;
+        padding: 0 20px;
       }
     `;
   }
@@ -52,6 +52,7 @@ export class AppHeader extends LitElement {
         <nav>
           <a href="./">Home</a>
           <a href="./meals">Meals</a>
+          <a href="./yt-downloader">YT Downloader</a>
         </nav>
       </header>
     `;

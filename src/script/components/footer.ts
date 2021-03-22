@@ -1,4 +1,4 @@
-import { LitElement, css, html, customElement, property } from 'lit-element';
+import { LitElement, css, html, customElement } from 'lit-element';
 
 
 @customElement('app-footer')

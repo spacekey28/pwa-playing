@@ -8,7 +8,6 @@ import { Router } from '@vaadin/router';
 import '../components/header';
 import '../components/footer';
 
-
 @customElement('app-index')
 export class AppIndex extends LitElement {
 
@@ -74,6 +73,13 @@ export class AppIndex extends LitElement {
             component: "app-meals",
             action: async () => {
               await import('./app-meals.js');
+            },
+          },
+          {
+            path: "/yt-downloader",
+            component: "app-yt-downloader",
+            action: async () => {
+              await import('./app-yt-downloader.js');
             },
           }
         ]
