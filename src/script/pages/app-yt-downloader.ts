@@ -58,8 +58,12 @@ export class AppYTDownloader extends LitElement {
   }
 
   clickHandler() {
-    console.log(this.inputEl.value);
     console.log("URL:", this.inputEl.value);
+    this.sendUrl(this.inputEl.value);
+  }
+
+  sendUrl(url: string) {
+    window.location.href = `http://localhost:3333/download?URL=${url}`;
   }
 
   private get inputEl(): HTMLInputElement {
