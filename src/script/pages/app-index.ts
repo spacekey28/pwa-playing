@@ -1,4 +1,3 @@
-
 import { LitElement, css, html, customElement } from 'lit-element';
 
 import './app-home';
